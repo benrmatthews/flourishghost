@@ -1,6 +1,6 @@
 {
-  "name": "ghost-on-heroku",
-  "description": "Just a blogging platform on Heroku.",
+  "name": "Good here Blog",
+  "description": "Updates from the Good Here project",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "start": "gatsby serve",
     "postinstall": "bash bin/copy-themes.sh",
     "build": "gatsby build",
-    "heroku-postbuild": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
