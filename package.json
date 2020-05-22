@@ -30,7 +30,8 @@
   },
   "scripts": {
     "start": "gatsby serve",
-    "postinstall": "bash bin/copy-themes.sh"
+    "postinstall": "bash bin/copy-themes.sh",
+    "build": "gatsby build",
     "heroku-postbuild": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
