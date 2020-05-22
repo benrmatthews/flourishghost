@@ -4,9 +4,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/snathjr/ghost-on-heroku.git"
+    "url": "git://github.com/benrmatthews/goodhereblog.git"
   },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
+  "bugs": "https://github.com/benrmatthews/goodhereblog/issues",
   "private": true,
   "version": "3.2.0",
   "dependencies": {
@@ -29,7 +29,12 @@
     "node": "10.X"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "gatsby serve",
     "postinstall": "bash bin/copy-themes.sh"
+    "build": "gatsby build",
+    "heroku-postbuild": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
