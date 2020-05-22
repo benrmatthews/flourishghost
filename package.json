@@ -35,6 +35,6 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "bin/create-config && bin/init-deployment",
-    "prestart": "knex-migrator migrate --mgpath node_modules/ghost && bin/wait-for-db|
+    "prestart": "knex-migrator migrate --mgpath node_modules/ghost && bin/wait-for-db"
   }
 }
