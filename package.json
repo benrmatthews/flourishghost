@@ -34,5 +34,7 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "bin/create-config && bin/init-deployment", // this allows you to deploy from git and have it build successfully
+    "prestart": "knex-migrator migrate --mgpath node_modules/ghost && bin/wait-for-db" // this runs the migrator and then waits for the db to connect just before heroku starts up your app
   }
 }
